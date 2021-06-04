@@ -50,6 +50,10 @@ input::placeholder {
     width: 400px;
     font-size: 20px;
 }
+.no-underline {
+    text-decoration: none;
+    color: black;
+}
 .my-square-text {
     text-align: center;
     position: relative;
@@ -235,7 +239,7 @@ li a:hover {
     color:rgb(0, 132, 255)
 }
 .horizon-3 {
-    height: 435px;
+    height: 508px;
 }
 @media (max-width: 770px) {
     .about-table {
