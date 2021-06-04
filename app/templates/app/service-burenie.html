@@ -1,0 +1,83 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block head %}
+<meta name="description" content="Бурение, водоснабжение, из колодца, на известняк, на песок, плюсы и минусы">
+<title>Бурение и водоснабжение</title>
+{% endblock head %}
+{% block content %}
+<div class="container-fluid ps-5 py-3" style="background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(0, 132, 255) 100%);">
+    <div class="container">
+        <h1 style="font-weight: bold;">БУРЕНИЕ</h1>
+    </div>
+</div>
+<div class="container about-text py-3">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quas incidunt sunt perferendis beatae consequuntur
+        exercitationem, accusantium dignissimos iure numquam maxime. A animi architecto accusantium. Molestias possimus
+        ipsam eum nisi.</p>
+    <p>Porro odio quibusdam dicta quaerat molestiae commodi consectetur hic explicabo delectus dolores, incidunt
+        necessitatibus eaque tempora. Dolor nobis sunt eos maxime vitae sit repellendus unde. Nemo nam quod accusamus
+        quisquam?</p>
+    <p>Sit voluptatibus mollitia debitis quia delectus nam, atque libero! Autem, recusandae non accusamus expedita
+        ullam, dignissimos inventore eos hic, neque rem quis? Sunt tenetur delectus nulla consequatur alias possimus
+        nesciunt!</p>
+<div style="overflow-x:auto;">
+    <table class="table-responsive about-table">
+        <thead>
+            <tr>
+                <th scope="col" style="font-weight:bold;text-align: center;border:2px solid rgb(0, 132, 255);background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0, 132, 255) 100%);">Водоснабжение</th>
+                <th colspan="2" scope="col" style="text-align: center;font-weight:bold;
+                background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0, 132, 255) 100%);">Водоснабжение дома из скважины</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;width:33%;font-weight: bold;">Из колодца</td>
+                <td style="text-align: center;width:33%;font-weight: bold;">На извесетняк</td>
+                <td style="text-align: center;width:33%;font-weight: bold;">На песок</td>
+            </tr>
+            <tr>
+                <td> <span style="font-weight:bold;color:green">Плюсы:</span> <br>
+                    <ul>
+                        <li>Дешевизна</li>
+                        <li>Эстетичный внешний вид</li>
+                    </ul>
+                    <span style="font-weight:bold;color:red;">Минусы:</span>
+                    <ul>
+                        <li>Уровень воды зависит от сезонности</li>
+                        <li>Плохое качество воды</li>
+                        <li>Малый срок службы</li>
+                    </ul>
+                </td>
+                <td><span style="font-weight:bold;color:green;">Плюсы:</span> <br>
+                    <ul>
+                        <li>Низкие затраты на установку</li>
+                    </ul>
+                    <span style="font-weight:bold;color:red;">Минусы:</span>
+                    <ul>
+                        <li>Быстро заиливается</li>
+                        <li>Неопределенность залежей</li>
+                        <li>Недолговечность</li>
+                    </ul>
+                </td>
+
+                <td><span style="font-weight:bold;color:green">Плюсы:</span> <br>
+                    <ul>
+                        <li>Продолжительность службы данного источника воды самый продолжительный (около 60-ти лет).
+                        </li>
+                    </ul>
+                    <span style="font-weight:bold;color:red;">Минусы:</span>
+                    <ul>
+                        <li>Дороговизна
+                            монтажа</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+{% endblock content %}

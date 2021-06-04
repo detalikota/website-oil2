@@ -1,0 +1,30 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block head %}
+<meta name="description" content="Выдача поискового запроса">
+<title>Результаты поиска</title>
+{% endblock head %}
+{% block content %}
+<div class="container search-container">
+<h2> Результаты поиска по услугам:</h2>
+<table class="table search-table">
+    <thead>
+        <tr>
+            <th scope="col" style="font-size:18px;">Услуга</th>
+            <th scope="col" style="font-size:18px;">Описание услуги</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            {% for service in object_list %}
+    <tr>
+    <td><a href= {{ service.url }} class="search-link cap"> {{ service.name }}</a></td>
+    <td class="cap">{{ service.description }}</td>
+    </tr>
+    {% endfor %}
+        
+    </tbody>
+</table>
+
+</div>
+{% endblock content %}
